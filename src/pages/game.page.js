@@ -57,10 +57,10 @@ export class GamePage extends HTMLElement {
           <main-title></main-title>
         </div>
         <div class="board-container">
-          <p class="turno">Turno de ${this.gameSession.playerOneName}</p>
+          <p class="turno">${this.gameSession.playerOneName} turn</p>
           <board-container></board-container>
           <div id="restart" class="hide-element">
-            <primary-button text="Nuevo Juego"></primary-button>
+            <primary-button text="New Game"></primary-button>
           </div>
         </div>
         <div>
@@ -95,18 +95,18 @@ export class GamePage extends HTMLElement {
 
   changeTurn(player) {
     this.shadowRoot.querySelector('.turno').innerHTML = player === 
-    'O' ? `Turno de ${this.gameSession.playerTwoName}` : `Turno de ${this.gameSession.playerOneName}`
+    'O' ? `${this.gameSession.playerTwoName} turn` : `${this.gameSession.playerOneName} turn`
   }
 
   handleTie() {
-    this.shadowRoot.querySelector('.turno').innerHTML = 'Empate'
+    this.shadowRoot.querySelector('.turno').innerHTML = 'Tie!'
     this.shadowRoot.querySelector('.turno').classList.add('loser')
     this.shadowRoot.querySelector('#restart').classList.remove('hide-element')
     document.removeEventListener('box-click', this)
   }
 
   handleWinner(player) {
-    this.shadowRoot.querySelector('.turno').innerHTML = `Ganaste ${player} ! ! !`
+    this.shadowRoot.querySelector('.turno').innerHTML = `Winner ${player} ! ! !`
     this.shadowRoot.querySelector('.turno').classList.add('winner')
     this.shadowRoot.querySelector('#restart').classList.remove('hide-element')
 

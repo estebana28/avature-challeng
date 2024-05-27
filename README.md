@@ -6,6 +6,16 @@ This challenge was created based on the instructions provided above.
 I've used plain vanilla Javascript, CSS and HTML.
 Other tech used was Vite for bundler.
 
+## To run this code follow this instructions...
+
+First install all dependencies with...
+
+```npm install```
+
+Then, run the project locally with this command...
+
+```npm start```
+
 I've used modules and web components for the creation of the game.
 The structure elected for the files was a folder(components) for the Interfaces components, other folder(pages) for the views/pages and other forlder(utils) for auxiliary functions or config files.
 
@@ -23,6 +33,6 @@ I've run out of time so some things was let undone and some need improvements.
 - One Player game with the computer.
 - Detection of one or two players via route params.
 - Testing
-
+- Score track trough local storage and show it in a scoreboard page
 
 Thanks for the oportunity.

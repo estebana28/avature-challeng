@@ -12,5 +12,9 @@ export const PATHS = {
   game: {
     path: '/game',
     component: `<game-page></game-page>`
-  }
+  },
+  // score: {
+  //   path: '/score',
+  //   component: `<score-page></score-page>`
+  // }
 }

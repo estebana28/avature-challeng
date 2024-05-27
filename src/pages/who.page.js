@@ -41,9 +41,9 @@ export class WhoPage extends HTMLElement {
           <main-title></main-title>
         </div>
         <div class="form-container">
-          <input-component placeholder="Ingrese su nombre" name="nameOne" label="Jugador 1"></input-component>
-          <input-component placeholder="Ingrese su nombre" name="nameTwo" label="Jugador 2"></input-component>
-          <p id="input-error" class="input-error">Debe de tener al menos 2 caracteres</p>
+          <input-component placeholder="Enter your name" name="nameOne" label="Player One"></input-component>
+          <input-component placeholder="Enter your name" name="nameTwo" label="Player Two"></input-component>
+          <p id="input-error" class="input-error">Must be at least 2 characters</p>
           <primary-button id="continue" text="Continuar"></primary-button>
         </div>
         <div>

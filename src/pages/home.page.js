@@ -30,10 +30,10 @@ export class HomePage extends HTMLElement {
         </div>
         <div>
           <div class="disabled">
-            <primary-button id="one-game" text="Un Jugador"></primary-button>
+            <primary-button id="one-game" text="One Player"></primary-button>
           </div>
 
-          <primary-button id="two-game" text="Dos Jugadores"></primary-button>
+          <primary-button id="two-game" text="Two Players"></primary-button>
         </div>
         <div>
           <footer-container></footer-container>
